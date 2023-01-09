@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'CassiaW04';
+    src: url('CassiaW04-Regular.woff2') format('woff2'),
+        url('CassiaW04-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CassiaW01';
+    src: url('CassiaW01-ExtraLight.woff2') format('woff2'),
+        url('CassiaW01-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeue-MediumExt.woff2') format('woff2'),
+        url('HelveticaNeue-MediumExt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
