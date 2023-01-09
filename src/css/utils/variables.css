@@ -1,1 +1,13 @@
-:root {}
+:root {
+    /* Color styles */
+    --noir: rgba(39, 37, 24, 1);
+    --beige: rgba(243, 224, 197, 1);
+
+    /* Text-size styles */
+    --titre-article: 30px;
+    --titre-page: 53px;
+    --footer: 20px;
+    --art-nouveau-footer: 26px;
+    --corps: 20px;
+
+}
