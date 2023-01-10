@@ -9,6 +9,13 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
+<nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
+    <ul>
+        <li><a href="#">item 1</a></li>
+        <li><a href="#">item 2</a></li>
+        <li><a href="#">item 3</a></li>
+    </ul>
+</nav>
 <body>
     <header> 
         <div class="header-parent-contact">
@@ -21,13 +28,6 @@
 
         </header>
 
-        <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
-            <ul>
-                <li><a href="#">item 1</a></li>
-                <li><a href="#">item 2</a></li>
-                <li><a href="#">item 3</a></li>
-            </ul>
-        </nav>
 
             <div class="contact-parent">
             <input class="contact-nom" type="text" placeholder="Prénom nom">
