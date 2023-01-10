@@ -1,0 +1,68 @@
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+input,
+textarea {
+    color: var(--noir);
+    background-color: var(--noir);
+    cursor: pointer;
+    outline: inherit;
+}
+
+textarea::placeholder {
+    color: var(--beige);
+}
+
+input::placeholder {
+    color: var(--beige);
+}
+
+input,
+textarea {
+    text-decoration-line: none;
+    color: var(--beige);
+}
+
+.contact-titre-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.contact-titre {
+    font-size: 30px;
+}
+
+.contact-soustitre {
+    font-size: 18px;
+}
+
+.contact-parent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.contact-textarea {
+    min-height: 228px;
+}
+
+.contact-nom,
+.contact-mail,
+.contact-objet,
+.contact-textarea {
+    margin-top: 30px;
+    border: 2px solid var(--beige);
+    border-radius: 10px;
+    padding: 5px;
+}
