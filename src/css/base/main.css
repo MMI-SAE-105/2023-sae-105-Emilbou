@@ -9,3 +9,7 @@ p {
 body {
     background-color: var(--noir);
 }
+
+h1 {
+    all: unset;
+}
