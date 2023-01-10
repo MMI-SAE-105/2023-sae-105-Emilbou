@@ -25,10 +25,12 @@
 .header-grid-svg2-intro {
     grid-area: 4 / 1 / 5 / 4;
     display: inline-flex;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 
-.header-grid-svg2-intro img {
-    margin-top: 20px;
+.header-grid-svg2-intro {
+    width: 100%;
 }
 
 .header-grid-icone-menu-intro {
