@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Nouveau</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header> 
+        <div class="header-parent-contact">
+            <div class="header-grid-image-contact"> </div>
+            <div class="header-grid-svg1-contact"> <img src="public/svg/header.svg" alt=""></div>
+            <div class="header-grid-svg2-contact"> <img src="public/svg/header2.svg" alt=""></div>
+            <div class="header-grid-icone-menu-contact"> <img src="public/svg/menu.svg" alt="" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <div class="header-grid-titre-contact"> <h1>Contact</h1></div>
+            </div>
+
+        </header>
+
+        <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+            </ul>
+        </nav>
+
+            <div class="contact-parent">
+            <input class="contact-nom" type="text" placeholder="Prénom nom">
+            <input class="contact-mail" type="text" placeholder="Adresse mail">
+            <input class="contact-objet" type="text" placeholder="Objet">
+            <textarea class="contact-textarea" placeholder="Message"></textarea>
+            <div class="contact-button-placement">
+            <button ><p> Envoyer </p></button>
+        </div>
+        </div>
+            <footer><div class="footer-parent">
+                <div class="footer-svg-fond"> <img src="public/svg/footer.svg" alt=""></div>
+                <div class="footer-titre"><h3>Art Nouveau</h3> </div>
+                <div class="footer-nom"><p>Emilien Boucard 1A1</p> </div>
+                <div class="footer-contact"> <p>contact</p>
+                    <p>Billetterie</p>
+                    <p>Art nouveau introduction</p></div>
+                </div></footer>
+</body>
+</html>
