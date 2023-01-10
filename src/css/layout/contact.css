@@ -8,6 +8,10 @@ button {
     outline: inherit;
 }
 
+button p {
+    color: var(--beige);
+}
+
 input,
 textarea {
     color: var(--noir);
@@ -18,10 +22,20 @@ textarea {
 
 textarea::placeholder {
     color: var(--beige);
+    font-family: var(--Helveticaregular);
+    background-color: var(--noir);
+}
+
+textarea::placeholder::after {
+    color: var(--beige);
+    font-family: var(--Helveticaregular);
+    background-color: var(--noir);
 }
 
 input::placeholder {
     color: var(--beige);
+    font-family: var(--Helveticaregular);
+    background-color: var(--noir);
 }
 
 input,
@@ -30,13 +44,6 @@ textarea {
     color: var(--beige);
 }
 
-.contact-titre-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
-}
 
 .contact-titre {
     font-size: 30px;
@@ -65,4 +72,15 @@ textarea {
     border: 2px solid var(--beige);
     border-radius: 10px;
     padding: 5px;
+}
+
+.contact-nom {
+    position: relative;
+}
+
+.contact-button-placement {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
