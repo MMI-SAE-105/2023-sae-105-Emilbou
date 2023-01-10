@@ -22,17 +22,44 @@ footer img {
 .div2 {
     grid-area: 1 / 1 / 2 / 3;
     padding: 20px;
+    margin-top: 25px;
 }
 
 .div2 h3 {
     color: var(--noir);
+    font-family: var(--Cassia);
+    font-size: 25px;
 
 }
 
 .div3 {
     grid-area: 3 / 2 / 4 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.div3 p {
+
+    font-family: var(--Helvetica);
+    font-size: 12px;
 }
 
 .div4 {
     grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+
+}
+
+.div4 p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-family: var(--Helvetica);
+    font-weight: lighter;
 }
