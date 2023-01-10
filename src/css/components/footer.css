@@ -1,0 +1,38 @@
+footer {
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    bottom: 0;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.div2 {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 20px;
+}
+
+.div2 h3 {
+    color: var(--noir);
+
+}
+
+.div3 {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.div4 {
+    grid-area: 1 / 1 / 4 / 2;
+}
