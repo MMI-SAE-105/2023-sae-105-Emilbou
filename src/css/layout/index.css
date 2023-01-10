@@ -5,3 +5,10 @@
     color: var(--beige);
     line-height: 31px;
 }
+
+.index-bouton-placement {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-right: 60px;
+}
