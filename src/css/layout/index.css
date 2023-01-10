@@ -1,3 +1,7 @@
-.test {
-    width: 100%;
+.index-chapo {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: var(--beige);
+    line-height: 31px;
 }

@@ -1,15 +1,22 @@
+body {
+    background-color: var(--noir);
+}
+
 img {
     max-width: 100%;
 }
 
 p {
-    font-family: var(--Cassia);
+    font-family: var(--helvetica);
 }
 
-body {
-    background-color: var(--noir);
-}
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     all: unset;
+    font-family: var(--Cassia);
+    color: var(--beige);
 }
