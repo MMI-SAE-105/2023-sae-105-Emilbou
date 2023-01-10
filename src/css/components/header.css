@@ -10,7 +10,10 @@
     grid-area: 1 / 1 / 5 / 4;
     background-image:
         linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-        url(../../../public/img/fondtest1@2x\ 2.webp)
+        url(../../../public/img/fondtest1@2x\ 2.webp);
+    background-repeat: round;
+    background-size: contain;
+    background-position: 100%;
 }
 
 .div2 {
@@ -19,11 +22,11 @@
 
 .div3 {
     grid-area: 4 / 1 / 5 / 4;
-
+    display: inline-flex;
 }
 
 .div3 img {
-    margin-bottom: -80px;
+    margin-top: 20px;
 }
 
 .div4 {
