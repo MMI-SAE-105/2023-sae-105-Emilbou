@@ -5,3 +5,7 @@ img {
 p {
     font-family: var(--Cassia);
 }
+
+body {
+    background-color: var(--noir);
+}
