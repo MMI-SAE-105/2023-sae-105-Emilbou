@@ -1,0 +1,58 @@
+.header-parent-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-grid-image-index {
+    grid-area: 1 / 1 / 5 / 4;
+    background-image:
+        linear-gradient(to left, rgba(0, 0, 0, 0.0), var(--noir)),
+        url(../../../public/img/fondtest1@2x\ 2.webp);
+    background-repeat: round;
+    background-size: contain;
+    background-position: 100%;
+}
+
+.header-grid-svg1-index {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.header-grid-svg2-index {
+    grid-area: 4 / 1 / 5 / 4;
+    display: inline-flex;
+}
+
+.header-grid-svg2-index img {
+    margin-top: 20px;
+}
+
+.header-grid-icone-menu-index {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-grid-titre-index {
+    grid-area: 2 / 1 / 4 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-grid-titre-index h1 {
+    font-family: var(--Cassia);
+    font-size: var(--titre-page);
+    margin-top: 0px;
+    color: var(--beige);
+    padding-left: 40px;
+}
