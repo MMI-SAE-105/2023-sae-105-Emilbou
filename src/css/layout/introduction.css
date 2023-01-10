@@ -1,0 +1,9 @@
+.introduction-title {
+    font-size: var(--titre-article);
+}
+
+.introduction-texte {
+    color: var(--beige);
+    font-family: var(--Helvetica);
+    font-size: 20px;
+}

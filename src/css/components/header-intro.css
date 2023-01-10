@@ -12,7 +12,7 @@
     grid-area: 1 / 1 / 5 / 4;
     background-image:
         linear-gradient(to left, rgba(0, 0, 0, 0.0), var(--noir)),
-        url(../../../public/img/farbiger-holzschnitt-zwei-schw-ne-1902.webp);
+        url(../../../public/img/eugène-grasset-encre.webp);
     background-repeat: round;
     background-size: contain;
     background-position: 100%;
