@@ -9,25 +9,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 </head>
-<style>
-    .accordeon{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .accordeon-flex{
-        display: flex;
-        flex-direction: column;
-    }
-    .accordeon h3{
-        font-size: 20px;
-        font-family: var(--Cassia);
-    }
-    a {
-        all: unset;
-    }
-    
-</style>
+
 
 <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
     <div class="accordeon">
@@ -35,16 +17,17 @@
     
     <section x-data="{isOpena:false}">
         <h2 @click="isOpena=! isOpena">Artistes</h2>
-        <div class="accordeon-flex" x-show="isOpena" x-collapse><h3>Owen Jones</h3>
-        <h3>Otto Eckmann</h3>
+        <div class="accordeon-flex" x-show="isOpena" x-collapse><a href="OwenJones.html"></a><h3>Owen Jones</h3>
+            <a href="OttoEckmann.html"><h3>Otto Eckmann</h3></a>
         <h3>jiji</h3>
         <h3>jiij</h3></div>
       </section>
 
       <section x-data="{isOpena:false}">
         <h2 @click="isOpena=! isOpena">Oeuvres</h2>
-        <div class="accordeon-flex" x-show="isOpena" x-collapse><h3>Owen Jones</h3>
-            <h3>Otto Eckmann</h3>
+        <div class="accordeon-flex" x-show="isOpena" x-collapse>
+            <a href="Jugend14.html"><h3> Jugend No. 14</h3>
+            <h3>jnnn</h3>
             <h3>jiji</h3>
             <h3>jiij</h3>
             <h3>jodf</h3>
@@ -54,7 +37,7 @@
         </div>
     </section>
     <a href="Contact.html"><h2>Contact</h2></a>
-    <h2>Billetterie</h2>
+    <a href="Billetterie.html"><h2>Billetterie</h2></a>
 </div>
     
 
