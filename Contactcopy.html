@@ -23,12 +23,15 @@
         font-size: 20px;
         font-family: var(--Cassia);
     }
+    a {
+        all: unset;
+    }
     
 </style>
 
 <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
     <div class="accordeon">
-    <h2>introduction</h2>
+    <a href="Introduction.html"><h2>introduction</h2></a>
     
     <section x-data="{isOpena:false}">
         <h2 @click="isOpena=! isOpena">Artistes</h2>
@@ -50,7 +53,7 @@
             <h3>oijo</h3>
         </div>
     </section>
-    <h2>Contact</h2>
+    <a href="Contact.html"><h2>Contact</h2></a>
     <h2>Billetterie</h2>
 </div>
     
