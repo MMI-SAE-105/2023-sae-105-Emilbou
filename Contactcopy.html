@@ -25,17 +25,28 @@
 <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
     <div class="accordeon">
     <h2>introduction</h2>
-    <h2 @click="isOpen=! isOpen">Artistes</h2>
-    <section x-data="{isOpena:true}">
+    
+    <section x-data="{isOpena:false}">
         <h2 @click="isOpena=! isOpena">Artistes</h2>
         <div class="accordeon-flex" x-show="isOpena" x-collapse><h3>Owen Jones</h3>
         <h3>Otto Eckmann</h3>
         <h3>jiji</h3>
         <h3>jiij</h3></div>
       </section>
-</section>
+
 </div>
-    <h2>Oeuvres</h2>
+<section x-data="{isOpena:false}">
+    <h2 @click="isOpena=! isOpena">Oeuvres</h2>
+    <div class="accordeon-flex" x-show="isOpena" x-collapse><h3>Owen Jones</h3>
+    <h3>Otto Eckmann</h3>
+    <h3>jiji</h3>
+    <h3>jiij</h3>
+<h3>jodf</h3>
+<h3>oji</h3>
+<h3>foij</h3>
+<h3>oijo</h3>
+</div>
+  </section>
     <h2>Contact</h2>
     <h2>Billetterie</h2>
 
