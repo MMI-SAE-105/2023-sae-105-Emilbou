@@ -12,6 +12,7 @@
 @import "css/layout/Jugend.css";
 @import "css/layout/Billetterie.css";
 @import "css/layout/Artiste.css";
+@import "css/layout/menu.css";
 /*--------------------------------*/
 @import "css/components/header-index.css";
 @import "css/components/header-Intro.css";
@@ -21,4 +22,4 @@
 @import "css/components/header-billeterie.css";
 @import "css/components/button.css";
 @import "css/components/footer.css";
-@import "css/layout/menu.css";
+@import "css/components/carousel.css";
