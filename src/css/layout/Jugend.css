@@ -1,0 +1,24 @@
+.Jugend-title {
+    font-size: var(--titre-article);
+    padding: 20px;
+}
+
+.Jugend-texte {
+    color: var(--beige);
+    font-family: var(--Helveticaregular);
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Jugend-img {
+    width: 260px;
+}
+
+.Jugend-img-position {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
