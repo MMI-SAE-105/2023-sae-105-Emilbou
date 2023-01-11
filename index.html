@@ -6,16 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art nouveau</title>
-    <link rel="icon" href="../public/icones/icon_endlesswar-logo.svg">
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
+<style>.redirect-titre{
+display: flex;
+justify-content: center;
+font-family: var(--Cassia);
+font-size: 40px;
+
+}
+
+.redirect-sous-titre {
+font-size: 30px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+body {
+    width: (100vw);
+    height: (100vh);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+</style>
+
+
 <body>
-    <h1 class="textalign">Art nouveau</h1>
-    <p class="redirection-cookie">Welcome</p>
-    <a href="./en/index.html" onclick="document.cookie = 'nf_lang=en; path='"><img class="language-en" src="./public/icons/GB.svg" alt="english"></a>
-    <p class="redirection-cookie">Bienvenue</p>
-    <a href="./fr/index.html"onclick="document.cookie = 'nf_lang=fr; path=/'"><img class="language-fr" src="./public/icons/FR.svg" alt="francais"></a>
+    <h1 class="redirect-titre">Art nouveau</h1>
+    <a href="en/index.html" onclick="document.cookie = 'nf_lang=en; path='">
+    <h2 class="redirect-sous-titre">English</h2></a>
+    <a href="fr/index.html"onclick="document.cookie = 'nf_lang=fr; path=/'"><h2 class="redirect-sous-titre">Français</h2>
+    </a>
 </body>
 
 </html>
