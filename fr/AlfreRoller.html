@@ -69,8 +69,20 @@
         
             
   <div class="Artiste-svg"><img src="../public/svg/hrcourbe.svg" alt=""></div>
-  <div class="Artiste-carousel">
-<img src="../public/img/the-weekly-magazine-jugend-no-14-1896.webp" alt="">
+  <div class="carousel-parent-relative" x-data="{ activeSlide: 1, slides: [1,2]}">
+    <div class="carousel-parent">
+<div x-show="activeSlide ===1">
+<a href="AndYou.html"><img src="../public/img/oeuvres/image8.webp" alt=""></a>
+</div>
+<div x-show="activeSlide ===2">
+
+<a href="WomanShadow.html"><img src="../public/img/oeuvres/image9.webp" alt=""></a>
+</div>
+</div>
+<div>
+    <img class="carousel-bouton carousel-avant" x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1" src="../public/svg/bouton2.svg" alt="">
+    <img class="carousel-bouton carousel-apres" x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1" src="../public/svg/bouton2-1.svg" alt="">
+   </div>
 </div>
         <footer><div class="footer-parent">
             <div class="footer-svg-fond"> <img src="../public/svg/footer.svg" alt=""></div>

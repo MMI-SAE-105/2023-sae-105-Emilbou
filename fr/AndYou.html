@@ -46,41 +46,23 @@
 
 <body>
     <header> 
-        <div class="header-parent-intro">
-            <div class="header-grid-image-intro"> </div>
-            <div class="header-grid-svg1-intro"> <img src="../public/svg/header.svg" alt=""></div>
-            <div class="header-grid-svg2-intro"> <img src="../public/svg/header2.svg" alt=""></div>
-            <div class="header-grid-icone-menu-intro"> <img src="../public/svg/menu.svg" alt="" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
-            <div class="header-grid-titre-intro"> <h1>Léo Schnug</h1></div>
+        <div class="header-parent-Jugend">
+            <div class="header-grid-image-Jugend"> </div>
+            <div class="header-grid-svg1-Jugend"> <img src="../public/svg/header.svg" alt=""></div>
+            <div class="header-grid-svg2-Jugend"> <img src="../public/svg/header2.svg" alt=""></div>
+            <div class="header-grid-icone-menu-Jugend"> <img src="../public/svg/menu.svg" alt="" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <div class="header-grid-titre-Jugend"> <h1>The weekly magazine Jugend No. 14</h1></div>
             </div>
 
         </header>
 
-        <h2 class="Artiste-title">Biographie</h2>
-        <p class="Artiste-texte">Léo Schnug est un artiste peintre et illustrateur français d'origine allemande qui fut membre du cercle de Saint-Léonard. Il est né le 17 février 1878 à Strasbourg dans l'Empire allemand et mort le 15 décembre 1933 à l’hôpital psychiatrique de Stephansfeld, à Brumath, Bas-Rhin.
-
-            Léo Schnug est né le 17 février 1878 à Strasbourg.
+        <h2 class="Jugend-title">Explication</h2>
+        <p class="Jugend-texte"><span> Otto Eckmann était un graphiste et illustrateur allemand actif à la fin du XIXe et au début du XXe siècle. Il était connu pour son style décoratif et ornemental, influencé par l'Art Nouveau et le Jugendstil. Eckmann a fourni des illustrations à de nombreux magazines et journaux de l'époque, dont l'hebdomadaire Jugend. Il est probable que Jugend n ° 14, un numéro spécifique du magazine, aurait présenté les illustrations d'Eckmann, ainsi que des articles et d'autres contenus liés à l'art, à la littérature et à la culture.</p>
             
-            Léo Schnug passe sa jeunesse à Lampertheim dans le village de sa mère, Marguerite Lobstein. Son père, Maximilien Schnug, greffier de justice d’origine allemande, est interné prématurément pour maladie mentale.</p>
-        
-            
-  <div class="Artiste-svg"><img src="../public/svg/hrcourbe.svg" alt=""></div>
-  
-  <div class="carousel-parent-relative" x-data="{ activeSlide: 1, slides: [1,2]}">
-    <div class="carousel-parent">
-<div x-show="activeSlide ===1">
-<a href="JugendMag.html"><img src="../public/img/oeuvres/image10.webp" alt=""></a>
-</div>
-<div x-show="activeSlide ===2">
+            <h2 class="Jugend-title">Oeuvre</h2>
+            <div class="Jugend-img-position"><img class="Jugend-img" src="../public/img/the-weekly-magazine-jugend-no-14-1896.webp" alt=""></div>
 
-<a href="Jugend14.html"><img src="../public/img/oeuvres/image11.webp" alt=""></a>
-</div>
-</div>
-<div>
-    <img class="carousel-bouton carousel-avant" x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1" src="../public/svg/bouton2.svg" alt="">
-    <img class="carousel-bouton carousel-apres" x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1" src="../public/svg/bouton2-1.svg" alt="">
-   </div>
-</div>
+
         <footer><div class="footer-parent">
             <div class="footer-svg-fond"> <img src="../public/svg/footer.svg" alt=""></div>
             <div class="footer-titre"><h3>Art Nouveau</h3> </div>
