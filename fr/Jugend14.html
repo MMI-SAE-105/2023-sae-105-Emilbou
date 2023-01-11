@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Nouveau</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+</head>
+<nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
+    <div class="accordeon">
+    <a href="Introduction.html"><h2>introduction</h2></a>
+    
+    <section x-data="{isOpena:false}">
+        <h2 @click="isOpena=! isOpena">Artistes</h2>
+        <div class="accordeon-flex" x-show="isOpena" x-collapse><a href="OwenJones.html"></a><h3>Owen Jones</h3>
+            <a href="OttoEckmann.html"><h3>Otto Eckmann</h3></a>
+        <h3>jiji</h3>
+        <h3>jiij</h3></div>
+      </section>
+
+      <section x-data="{isOpena:false}">
+        <h2 @click="isOpena=! isOpena">Oeuvres</h2>
+        <div class="accordeon-flex" x-show="isOpena" x-collapse>
+            <a href="Jugend14.html"><h3> Jugend No. 14</h3>
+            <h3>jnnn</h3>
+            <h3>jiji</h3>
+            <h3>jiij</h3>
+            <h3>jodf</h3>
+            <h3>oji</h3>
+            <h3>foij</h3>
+            <h3>oijo</h3>
+        </div>
+    </section>
+    <a href="Contact.html"><h2>Contact</h2></a>
+    <a href="Billetterie.html"><h2>Billetterie</h2></a>
+</div>
+    
+
+</nav>
+
+<body>
+    <header> 
+        <div class="header-parent-Jugend">
+            <div class="header-grid-image-Jugend"> </div>
+            <div class="header-grid-svg1-Jugend"> <img src="public/svg/header.svg" alt=""></div>
+            <div class="header-grid-svg2-Jugend"> <img src="public/svg/header2.svg" alt=""></div>
+            <div class="header-grid-icone-menu-Jugend"> <img src="public/svg/menu.svg" alt="" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <div class="header-grid-titre-Jugend"> <h1>The weekly magazine Jugend No. 14</h1></div>
+            </div>
+
+        </header>
+
+        <h2 class="Jugend-title">Explication</h2>
+        <p class="Jugend-texte"><span> Otto Eckmann était un graphiste et illustrateur allemand actif à la fin du XIXe et au début du XXe siècle. Il était connu pour son style décoratif et ornemental, influencé par l'Art Nouveau et le Jugendstil. Eckmann a fourni des illustrations à de nombreux magazines et journaux de l'époque, dont l'hebdomadaire Jugend. Il est probable que Jugend n ° 14, un numéro spécifique du magazine, aurait présenté les illustrations d'Eckmann, ainsi que des articles et d'autres contenus liés à l'art, à la littérature et à la culture.</p>
+            
+            <h2 class="Jugend-title">Oeuvre</h2>
+            <div class="Jugend-img-position"><img class="Jugend-img" src="public/img/the-weekly-magazine-jugend-no-14-1896.webp" alt=""></div>
+
+
+        <footer><div class="footer-parent">
+            <div class="footer-svg-fond"> <img src="public/svg/footer.svg" alt=""></div>
+            <div class="footer-titre"><h3>Art Nouveau</h3> </div>
+            <div class="footer-nom"><p>Emilien Boucard 1A1</p> </div>
+            <div class="footer-contact"> <p>contact</p>
+                <p>Billetterie</p>
+                <p>Art nouveau introduction</p></div>
+            </div></footer>
+</body>
+</html>

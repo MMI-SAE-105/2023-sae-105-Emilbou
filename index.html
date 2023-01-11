@@ -1,100 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<html lang="">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Nouveau</title>
+    <title>Art nouveau</title>
+    <link rel="icon" href="../public/icones/icon_endlesswar-logo.svg">
     <link rel="stylesheet" href="src/styles.css">
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
-    <div class="accordeon">
-    <a href="Introduction.html"><h2>introduction</h2></a>
-    
-    <section x-data="{isOpena:false}">
-        <h2 @click="isOpena=! isOpena">Artistes</h2>
-        <div class="accordeon-flex" x-show="isOpena" x-collapse><a href="OwenJones.html"></a><h3>Owen Jones</h3>
-            <a href="OttoEckmann.html"><h3>Otto Eckmann</h3></a>
-        <h3>jiji</h3>
-        <h3>jiij</h3></div>
-      </section>
-
-      <section x-data="{isOpena:false}">
-        <h2 @click="isOpena=! isOpena">Oeuvres</h2>
-        <div class="accordeon-flex" x-show="isOpena" x-collapse>
-            <a href="Jugend14.html"><h3> Jugend No. 14</h3>
-            <h3>jnnn</h3>
-            <h3>jiji</h3>
-            <h3>jiij</h3>
-            <h3>jodf</h3>
-            <h3>oji</h3>
-            <h3>foij</h3>
-            <h3>oijo</h3>
-        </div>
-    </section>
-    <a href="Contact.html"><h2>Contact</h2></a>
-    <a href="Billetterie.html"><h2>Billetterie</h2></a>
-</div>
-    
-
-</nav>
-
-
 <body>
-    <header> 
-        <div class="header-parent-index">
-            <div class="header-grid-image-index"> </div>
-            <div class="header-grid-svg1-index"> <img src="public/svg/header.svg" alt=""></div>
-            <div class="header-grid-svg2-index"> <img src="public/svg/header2.svg" alt=""></div>
-            <div class="header-grid-icone-menu-index"> <img src="public/svg/menu.svg" alt="" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
-            <div class="header-grid-titre-index"> <h1>Art Nouveau</h1></div>
-            </div>
-
-        </header>
-        <p class="index-chapo">Du 13 avril au 23 juin, <br>
-            Plongez dans l’univers de l’Art nouveau <br>
-            en retraçant son évolution au fil du temps <br>
-            à la fondation Cartier, 261 Bd Raspail, Paris</p>
-
-
-            <div class="index-bandeau">
-                <div class="index-bandeau-image"> <img src="public/svg/bandeauindex.svg" alt=""></div>
-                <div class="index-bandeau-titre"> <h2>L'art Nouveau ? <br> Qu'est-ce que c'est ?</h2> </div>
-                <div class="index-bandeau-triangles"> <span class="index-bandeau-polygon"><img src="public/svg/Polygon2.svg" alt=""></span></div>
-                </div>
-               
-
-                <a href="OwenJones.html"><section class="index-frise-parent">
-<button class="index-frise-bouton">1809-1874 <br>
-Owen Jones</button>
-<img class="index-frise-img" src="public/img/OwenJones.webp" alt="">
-                </section></a>
-               <a href="Otto Eckmann"> <section class="index-frise-parent1">
-<button class="index-frise-bouton1">1865-1902 <br>
-Otto Eckmann</button>
-<img class="index-frise-img1" src="public/img/OttoEckmann.webp" alt="">
-                </section></a>
-                <section class="index-frise-parent">
-<button class="index-frise-bouton">1809-1874 <br>
-Owen Jones</button>
-<img class="index-frise-img" src="public/img/OwenJones.webp" alt="">
-                </section>
-                <section class="index-frise-parent1">
-<button class="index-frise-bouton1">1809-1874 <br>
-Owen Jones</button>
-<img class="index-frise-img1" src="public/img/OwenJones.webp" alt="">
-                </section>
-        
-                <footer><div class="footer-parent">
-                    <div class="footer-svg-fond"> <img src="public/svg/footer.svg" alt=""></div>
-                    <div class="footer-titre"><h3>Art Nouveau</h3> </div>
-                    <div class="footer-nom"><p>Emilien Boucard 1A1</p> </div>
-                    <div class="footer-contact"> <p>contact</p>
-                        <p>Billetterie</p>
-                        <p>Art nouveau introduction</p></div>
-                    </div></footer>
+    <h1 class="textalign">Art nouveau</h1>
+    <p class="redirection-cookie">Welcome</p>
+    <a href="./en/index.html" onclick="document.cookie = 'nf_lang=en; path='"><img class="language-en" src="./public/icons/GB.svg" alt="english"></a>
+    <p class="redirection-cookie">Bienvenue</p>
+    <a href="./fr/index.html"onclick="document.cookie = 'nf_lang=fr; path=/'"><img class="language-fr" src="./public/icons/FR.svg" alt="francais"></a>
 </body>
+
 </html>
