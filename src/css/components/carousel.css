@@ -10,18 +10,18 @@
 
 .carousel-avant {
     position: absolute;
-    top: 120px;
+    top: 100px;
     bottom: 0;
     left: 0;
-
+    margin-left: 26px;
 }
 
 .carousel-apres {
     position: absolute;
-    top: 120px;
+    top: 100px;
     bottom: 0;
     right: 0;
-
+    margin-right: 53px;
 }
 
 .carousel-parent-relative {
