@@ -71,6 +71,7 @@
 
 </div>
 <div x-data="{ activeSlide: 1, slides: [1,2]}">
+    <div class="carousel-parent">
 <div x-show="activeSlide ===1">
 <img src="https://picsum.photos/200" alt="">
 </div>
@@ -81,6 +82,7 @@
 <div>
     <button x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">-</button>
     <button x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">+</button>
+</div>
 </div>
         <footer><div class="footer-parent">
             <div class="footer-svg-fond"> <img src="../public/svg/footer.svg" alt=""></div>
