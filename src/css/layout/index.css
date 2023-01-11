@@ -46,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .index-bandeau-titre h2 {
@@ -60,4 +61,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.index-frise-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    padding: 20px;
+}
+
+
+.index-frise-bouton {
+    position: absolute;
+    margin-left: 30px;
+    left: 0;
+    bottom: 150px;
+}
+
+.index-frise-bouton {
+    color: var(--beige);
+}
+
+.index-frise-img {
+    z-index: -2;
+    width: 260px;
+    height: 260px;
+}
+
+.index-frise-parent1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px;
+}
+
+
+.index-frise-bouton1 {
+    position: absolute;
+    margin-right: 30px;
+    right: 0;
+    bottom: 70px;
+}
+
+.index-frise-bouton1 {
+    color: var(--beige);
+}
+
+.index-frise-img1 {
+    z-index: -2;
+    width: 260px;
+    height: 260px;
 }
