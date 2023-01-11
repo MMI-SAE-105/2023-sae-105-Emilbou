@@ -29,6 +29,9 @@
     align-items: flex-end;
 }
 
+.header-grid-svg2-index {
+    width: 100%;
+}
 
 .header-grid-icone-menu-index {
     grid-area: 1 / 3 / 2 / 4;
