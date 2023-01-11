@@ -78,6 +78,10 @@
 
 <img src="https://picsum.photos/201" alt="">
 </div>
+<div>
+    <button x-on:click="activeSlide = activeSlide === 1 ? slides.length : activeSlide - 1">-</button>
+    <button x-on:click="activeSlide = activeSlide === slides.length ? 1 : activeSlide + 1">+</button>
+</div>
         <footer><div class="footer-parent">
             <div class="footer-svg-fond"> <img src="../public/svg/footer.svg" alt=""></div>
             <div class="footer-titre"><h3>Art Nouveau</h3> </div>
