@@ -74,15 +74,17 @@
   
 <div class="carousel-parent-relative" x-data="{ activeSlide: 1, slides: [1,2]}">
     <div class="carousel-parent">
-        <a href="GreekNo3.html">
-<div x-show="activeSlide ===1">
-<img src="../public/img/oeuvres/image4.webp" alt="">
-</a>
-</div>
-<a href="EgyptianNo1.html">
-<div x-show="activeSlide ===2">
+        <div x-show="activeSlide ===1">
+            <a href="GreekNo3.html">
+            <img src="../public/img/oeuvres/image4.webp" alt="">
+            <button class="carousel-button">En savoir plus</button></a>
 
-<img src="../public/img/oeuvres/image5.webp" alt=""></a>
+</div>
+<div x-show="activeSlide ===2">
+    
+    <a href="EgyptianNo1.html">
+<img src="../public/img/oeuvres/image5.webp" alt="">
+<button class="carousel-button">En savoir plus</button></a>
 
 </div>
 </div>

@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    z-index: -5;
 }
 
 .carousel-bouton {
@@ -29,4 +28,14 @@
     position: relative;
 
     padding: 40px;
+}
+
+
+
+.carousel-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--beige);
+    font-family: var(--Helvetica);
 }
