@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 </head>
 <style>.menu{
     position: fixed;
@@ -36,5 +37,43 @@
             <li><a href="#">item 3</a></li>
         </ul>
     </nav>
+
+    <h1>Accordéon avec des booléens</h1>
+
+
+    <button><a href="index.html">Accueil</a></button>
+  
+  
+    <div class="accordeon">
+      <section x-data="{
+          isOpen:true,
+        }">
+        <button @click="isOpen=! isOpen">bouton 1</button>
+        <p x-show="isOpen" x-collapse>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ad
+          similique error odit,
+          voluptas molestias
+          porro beatae exercitationem. Repellendus nihil laborum consequatur expedita harum impedit voluptas quam ipsum
+          sit hic.</p>
+      </section>
+      <section x-data="{isOpena:true}">
+        <button @click="isOpena=! isOpena">bouton 2</button>
+        <p x-show="isOpena" x-collapse>Placeat neque, blanditiis omnis sint dignissimos beatae delectus
+          commodi. Ipsa eligendi
+          ducimus
+          nostrum esse,
+          et culpa natus iure unde atque quod facilis non aperiam distinctio veritatis, repudiandae magni! Aspernatur,
+          molestiae.</p>
+      </section>
+      <section x-data="{
+        isOpenb:true,
+      }">
+        <button @click="isOpenb=! isOpenb">bouton 3</button>
+        <p x-show="isOpenb" x-collapse>Ex quo quos culpa eaque nostrum rerum quasi autem, totam
+          consequatur tempore nisi repellendus
+          dignissimos
+          harum, sed cum at libero laborum veniam? Aliquid odio quia pariatur, eligendi accusamus veritatis sunt.</p>
+      </section>
+    </div>
+
 </body>
 </html>

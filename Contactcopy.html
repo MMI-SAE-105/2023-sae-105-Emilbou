@@ -6,15 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Nouveau</title>
     <link rel="stylesheet" href="src/styles.css">
-    <script defer src="https://unpkg.com/alpinejs"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 </head>
+<style>
+    .accordeon{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .accordeon-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+</style>
 
 <nav id="mainNav" x-show="menuIsOpen"x-transition.duration.800ms class="menu">
-    <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
-    </ul>
+    <div class="accordeon">
+    <h2>introduction</h2>
+    <h2 @click="isOpen=! isOpen">Artistes</h2>
+    <section x-data="{isOpena:true}">
+        <h2 @click="isOpena=! isOpena">Artistes</h2>
+        <div class="accordeon-flex" x-show="isOpena" x-collapse><h3>Owen Jones</h3>
+        <h3>Otto Eckmann</h3>
+        <h3>jiji</h3>
+        <h3>jiij</h3></div>
+      </section>
+</section>
+</div>
+    <h2>Oeuvres</h2>
+    <h2>Contact</h2>
+    <h2>Billetterie</h2>
+
+
 </nav>
 <body>
     <header> 
